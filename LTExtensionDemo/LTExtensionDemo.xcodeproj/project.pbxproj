@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A62D270720491594009BAEAE /* String+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D270220491594009BAEAE /* String+LTExtension.swift */; };
+		A62D270820491594009BAEAE /* Dictionary+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D270320491594009BAEAE /* Dictionary+LTExtension.swift */; };
+		A62D270920491594009BAEAE /* NSAttributedString+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D270420491594009BAEAE /* NSAttributedString+LTExtension.swift */; };
+		A62D270A20491594009BAEAE /* Optional+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D270520491594009BAEAE /* Optional+LTExtension.swift */; };
+		A62D270B20491594009BAEAE /* Array+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D270620491594009BAEAE /* Array+LTExtension.swift */; };
+		A6458A7E20526B5200132B39 /* UIApplication+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6458A7D20526B5200132B39 /* UIApplication+LTExtension.swift */; };
+		A6458A82205286A200132B39 /* UIDevice+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6458A81205286A200132B39 /* UIDevice+LTExtension.swift */; };
+		A665DDAB2043F97900F522AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A665DDAA2043F97900F522AE /* AppDelegate.swift */; };
+		A665DDAD2043F97900F522AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A665DDAC2043F97900F522AE /* ViewController.swift */; };
+		A665DDB22043F97900F522AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A665DDB12043F97900F522AE /* Assets.xcassets */; };
+		A665DDB52043F97900F522AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A665DDB32043F97900F522AE /* LaunchScreen.storyboard */; };
+		A665DDC02043F97900F522AE /* LTExtensionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A665DDBF2043F97900F522AE /* LTExtensionDemoTests.swift */; };
+		A665DDCB2043F97900F522AE /* LTExtensionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A665DDCA2043F97900F522AE /* LTExtensionDemoUITests.swift */; };
+		A6BB05B92053995000C36E8B /* VCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05AB2053995000C36E8B /* VCViewController.swift */; };
+		A6BB05BA2053995000C36E8B /* BaseContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05AC2053995000C36E8B /* BaseContentViewController.swift */; };
+		A6BB05BB2053995000C36E8B /* NSAttributedStringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05AD2053995000C36E8B /* NSAttributedStringVC.swift */; };
+		A6BB05BC2053995000C36E8B /* UIApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05AE2053995000C36E8B /* UIApplicationViewController.swift */; };
+		A6BB05BD2053995000C36E8B /* StringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05AF2053995000C36E8B /* StringViewController.swift */; };
+		A6BB05BE2053995000C36E8B /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B02053995000C36E8B /* BaseTableViewController.swift */; };
+		A6BB05BF2053995000C36E8B /* DeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B12053995000C36E8B /* DeviceViewController.swift */; };
+		A6BB05C02053995000C36E8B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B22053995000C36E8B /* RootViewController.swift */; };
+		A6BB05C12053995000C36E8B /* ArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B32053995000C36E8B /* ArrayViewController.swift */; };
+		A6BB05C22053995000C36E8B /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B42053995000C36E8B /* ImageViewController.swift */; };
+		A6BB05C32053995000C36E8B /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B52053995000C36E8B /* DictionaryViewController.swift */; };
+		A6BB05C42053995000C36E8B /* OptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B62053995000C36E8B /* OptionalViewController.swift */; };
+		A6BB05C52053995000C36E8B /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B72053995000C36E8B /* TextFieldViewController.swift */; };
+		A6BB05C62053995000C36E8B /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B82053995000C36E8B /* ColorViewController.swift */; };
+		A6FF5B2720510FCE00A22FCE /* UITextField+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FF5B2620510FCE00A22FCE /* UITextField+LTExtension.swift */; };
+		A6FF5B2D205113CA00A22FCE /* UIImage+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FF5B2C205113CA00A22FCE /* UIImage+LTExtension.swift */; };
+		A6FF5B2F20511B6200A22FCE /* UIColor+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FF5B2E20511B6200A22FCE /* UIColor+LTExtension.swift */; };
+		A6FF5B3920513E0700A22FCE /* UIViewController+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FF5B3820513E0700A22FCE /* UIViewController+LTExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A665DDBC2043F97900F522AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A665DD9F2043F97900F522AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A665DDA62043F97900F522AE;
+			remoteInfo = LTExtensionDemo;
+		};
+		A665DDC72043F97900F522AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A665DD9F2043F97900F522AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A665DDA62043F97900F522AE;
+			remoteInfo = LTExtensionDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A62D270220491594009BAEAE /* String+LTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+LTExtension.swift"; sourceTree = "<group>"; };
+		A62D270320491594009BAEAE /* Dictionary+LTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+LTExtension.swift"; sourceTree = "<group>"; };
+		A62D270420491594009BAEAE /* NSAttributedString+LTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+LTExtension.swift"; sourceTree = "<group>"; };
+		A62D270520491594009BAEAE /* Optional+LTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+LTExtension.swift"; sourceTree = "<group>"; };
+		A62D270620491594009BAEAE /* Array+LTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+LTExtension.swift"; sourceTree = "<group>"; };
+		A6458A7D20526B5200132B39 /* UIApplication+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+LTExtension.swift"; sourceTree = "<group>"; };
+		A6458A81205286A200132B39 /* UIDevice+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+LTExtension.swift"; sourceTree = "<group>"; };
+		A665DDA72043F97900F522AE /* LTExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A665DDAA2043F97900F522AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A665DDAC2043F97900F522AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A665DDB12043F97900F522AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A665DDB42043F97900F522AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A665DDB62043F97900F522AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A665DDBB2043F97900F522AE /* LTExtensionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTExtensionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A665DDBF2043F97900F522AE /* LTExtensionDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTExtensionDemoTests.swift; sourceTree = "<group>"; };
+		A665DDC12043F97900F522AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A665DDC62043F97900F522AE /* LTExtensionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTExtensionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A665DDCA2043F97900F522AE /* LTExtensionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTExtensionDemoUITests.swift; sourceTree = "<group>"; };
+		A665DDCC2043F97900F522AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6BB05AB2053995000C36E8B /* VCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCViewController.swift; sourceTree = "<group>"; };
+		A6BB05AC2053995000C36E8B /* BaseContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseContentViewController.swift; sourceTree = "<group>"; };
+		A6BB05AD2053995000C36E8B /* NSAttributedStringVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringVC.swift; sourceTree = "<group>"; };
+		A6BB05AE2053995000C36E8B /* UIApplicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationViewController.swift; sourceTree = "<group>"; };
+		A6BB05AF2053995000C36E8B /* StringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringViewController.swift; sourceTree = "<group>"; };
+		A6BB05B02053995000C36E8B /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		A6BB05B12053995000C36E8B /* DeviceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceViewController.swift; sourceTree = "<group>"; };
+		A6BB05B22053995000C36E8B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A6BB05B32053995000C36E8B /* ArrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayViewController.swift; sourceTree = "<group>"; };
+		A6BB05B42053995000C36E8B /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		A6BB05B52053995000C36E8B /* DictionaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
+		A6BB05B62053995000C36E8B /* OptionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalViewController.swift; sourceTree = "<group>"; };
+		A6BB05B72053995000C36E8B /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		A6BB05B82053995000C36E8B /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		A6FF5B2620510FCE00A22FCE /* UITextField+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+LTExtension.swift"; sourceTree = "<group>"; };
+		A6FF5B2C205113CA00A22FCE /* UIImage+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+LTExtension.swift"; sourceTree = "<group>"; };
+		A6FF5B2E20511B6200A22FCE /* UIColor+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+LTExtension.swift"; sourceTree = "<group>"; };
+		A6FF5B3820513E0700A22FCE /* UIViewController+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LTExtension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A665DDA42043F97900F522AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A665DDB82043F97900F522AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A665DDC32043F97900F522AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A62D270120491594009BAEAE /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				A62D270620491594009BAEAE /* Array+LTExtension.swift */,
+				A62D270320491594009BAEAE /* Dictionary+LTExtension.swift */,
+				A62D270420491594009BAEAE /* NSAttributedString+LTExtension.swift */,
+				A62D270520491594009BAEAE /* Optional+LTExtension.swift */,
+				A62D270220491594009BAEAE /* String+LTExtension.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		A665DD9E2043F97900F522AE = {
+			isa = PBXGroup;
+			children = (
+				A665DDA92043F97900F522AE /* LTExtensionDemo */,
+				A665DDBE2043F97900F522AE /* LTExtensionDemoTests */,
+				A665DDC92043F97900F522AE /* LTExtensionDemoUITests */,
+				A665DDA82043F97900F522AE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A665DDA82043F97900F522AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A665DDA72043F97900F522AE /* LTExtensionDemo.app */,
+				A665DDBB2043F97900F522AE /* LTExtensionDemoTests.xctest */,
+				A665DDC62043F97900F522AE /* LTExtensionDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A665DDA92043F97900F522AE /* LTExtensionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A6BB05AA2053995000C36E8B /* UI */,
+				A665DDE32043FB8A00F522AE /* Extension */,
+				A665DDAA2043F97900F522AE /* AppDelegate.swift */,
+				A665DDAC2043F97900F522AE /* ViewController.swift */,
+				A665DDB12043F97900F522AE /* Assets.xcassets */,
+				A665DDB32043F97900F522AE /* LaunchScreen.storyboard */,
+				A665DDB62043F97900F522AE /* Info.plist */,
+			);
+			path = LTExtensionDemo;
+			sourceTree = "<group>";
+		};
+		A665DDBE2043F97900F522AE /* LTExtensionDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A665DDBF2043F97900F522AE /* LTExtensionDemoTests.swift */,
+				A665DDC12043F97900F522AE /* Info.plist */,
+			);
+			path = LTExtensionDemoTests;
+			sourceTree = "<group>";
+		};
+		A665DDC92043F97900F522AE /* LTExtensionDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A665DDCA2043F97900F522AE /* LTExtensionDemoUITests.swift */,
+				A665DDCC2043F97900F522AE /* Info.plist */,
+			);
+			path = LTExtensionDemoUITests;
+			sourceTree = "<group>";
+		};
+		A665DDE32043FB8A00F522AE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A6FF5B252051026900A22FCE /* UIKit */,
+				A62D270120491594009BAEAE /* Foundation */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A6BB05AA2053995000C36E8B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A6BB05AB2053995000C36E8B /* VCViewController.swift */,
+				A6BB05AC2053995000C36E8B /* BaseContentViewController.swift */,
+				A6BB05AD2053995000C36E8B /* NSAttributedStringVC.swift */,
+				A6BB05AE2053995000C36E8B /* UIApplicationViewController.swift */,
+				A6BB05AF2053995000C36E8B /* StringViewController.swift */,
+				A6BB05B02053995000C36E8B /* BaseTableViewController.swift */,
+				A6BB05B12053995000C36E8B /* DeviceViewController.swift */,
+				A6BB05B22053995000C36E8B /* RootViewController.swift */,
+				A6BB05B32053995000C36E8B /* ArrayViewController.swift */,
+				A6BB05B42053995000C36E8B /* ImageViewController.swift */,
+				A6BB05B52053995000C36E8B /* DictionaryViewController.swift */,
+				A6BB05B62053995000C36E8B /* OptionalViewController.swift */,
+				A6BB05B72053995000C36E8B /* TextFieldViewController.swift */,
+				A6BB05B82053995000C36E8B /* ColorViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A6FF5B252051026900A22FCE /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A6FF5B2620510FCE00A22FCE /* UITextField+LTExtension.swift */,
+				A6FF5B2C205113CA00A22FCE /* UIImage+LTExtension.swift */,
+				A6FF5B2E20511B6200A22FCE /* UIColor+LTExtension.swift */,
+				A6FF5B3820513E0700A22FCE /* UIViewController+LTExtension.swift */,
+				A6458A7D20526B5200132B39 /* UIApplication+LTExtension.swift */,
+				A6458A81205286A200132B39 /* UIDevice+LTExtension.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A665DDA62043F97900F522AE /* LTExtensionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A665DDCF2043F97900F522AE /* Build configuration list for PBXNativeTarget "LTExtensionDemo" */;
+			buildPhases = (
+				A665DDA32043F97900F522AE /* Sources */,
+				A665DDA42043F97900F522AE /* Frameworks */,
+				A665DDA52043F97900F522AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LTExtensionDemo;
+			productName = LTExtensionDemo;
+			productReference = A665DDA72043F97900F522AE /* LTExtensionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A665DDBA2043F97900F522AE /* LTExtensionDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A665DDD22043F97900F522AE /* Build configuration list for PBXNativeTarget "LTExtensionDemoTests" */;
+			buildPhases = (
+				A665DDB72043F97900F522AE /* Sources */,
+				A665DDB82043F97900F522AE /* Frameworks */,
+				A665DDB92043F97900F522AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A665DDBD2043F97900F522AE /* PBXTargetDependency */,
+			);
+			name = LTExtensionDemoTests;
+			productName = LTExtensionDemoTests;
+			productReference = A665DDBB2043F97900F522AE /* LTExtensionDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A665DDC52043F97900F522AE /* LTExtensionDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A665DDD52043F97900F522AE /* Build configuration list for PBXNativeTarget "LTExtensionDemoUITests" */;
+			buildPhases = (
+				A665DDC22043F97900F522AE /* Sources */,
+				A665DDC32043F97900F522AE /* Frameworks */,
+				A665DDC42043F97900F522AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A665DDC82043F97900F522AE /* PBXTargetDependency */,
+			);
+			name = LTExtensionDemoUITests;
+			productName = LTExtensionDemoUITests;
+			productReference = A665DDC62043F97900F522AE /* LTExtensionDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A665DD9F2043F97900F522AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = TopSky;
+				TargetAttributes = {
+					A665DDA62043F97900F522AE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A665DDBA2043F97900F522AE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A665DDA62043F97900F522AE;
+					};
+					A665DDC52043F97900F522AE = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A665DDA62043F97900F522AE;
+					};
+				};
+			};
+			buildConfigurationList = A665DDA22043F97900F522AE /* Build configuration list for PBXProject "LTExtensionDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A665DD9E2043F97900F522AE;
+			productRefGroup = A665DDA82043F97900F522AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A665DDA62043F97900F522AE /* LTExtensionDemo */,
+				A665DDBA2043F97900F522AE /* LTExtensionDemoTests */,
+				A665DDC52043F97900F522AE /* LTExtensionDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A665DDA52043F97900F522AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A665DDB52043F97900F522AE /* LaunchScreen.storyboard in Resources */,
+				A665DDB22043F97900F522AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A665DDB92043F97900F522AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A665DDC42043F97900F522AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A665DDA32043F97900F522AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62D270720491594009BAEAE /* String+LTExtension.swift in Sources */,
+				A6458A82205286A200132B39 /* UIDevice+LTExtension.swift in Sources */,
+				A62D270820491594009BAEAE /* Dictionary+LTExtension.swift in Sources */,
+				A6FF5B2720510FCE00A22FCE /* UITextField+LTExtension.swift in Sources */,
+				A665DDAD2043F97900F522AE /* ViewController.swift in Sources */,
+				A6458A7E20526B5200132B39 /* UIApplication+LTExtension.swift in Sources */,
+				A6BB05C32053995000C36E8B /* DictionaryViewController.swift in Sources */,
+				A6BB05C62053995000C36E8B /* ColorViewController.swift in Sources */,
+				A6BB05C22053995000C36E8B /* ImageViewController.swift in Sources */,
+				A62D270B20491594009BAEAE /* Array+LTExtension.swift in Sources */,
+				A6FF5B2F20511B6200A22FCE /* UIColor+LTExtension.swift in Sources */,
+				A6BB05BE2053995000C36E8B /* BaseTableViewController.swift in Sources */,
+				A62D270920491594009BAEAE /* NSAttributedString+LTExtension.swift in Sources */,
+				A6BB05C12053995000C36E8B /* ArrayViewController.swift in Sources */,
+				A62D270A20491594009BAEAE /* Optional+LTExtension.swift in Sources */,
+				A6BB05BC2053995000C36E8B /* UIApplicationViewController.swift in Sources */,
+				A6BB05BF2053995000C36E8B /* DeviceViewController.swift in Sources */,
+				A6BB05C52053995000C36E8B /* TextFieldViewController.swift in Sources */,
+				A6BB05C42053995000C36E8B /* OptionalViewController.swift in Sources */,
+				A6FF5B3920513E0700A22FCE /* UIViewController+LTExtension.swift in Sources */,
+				A665DDAB2043F97900F522AE /* AppDelegate.swift in Sources */,
+				A6FF5B2D205113CA00A22FCE /* UIImage+LTExtension.swift in Sources */,
+				A6BB05BA2053995000C36E8B /* BaseContentViewController.swift in Sources */,
+				A6BB05C02053995000C36E8B /* RootViewController.swift in Sources */,
+				A6BB05BB2053995000C36E8B /* NSAttributedStringVC.swift in Sources */,
+				A6BB05B92053995000C36E8B /* VCViewController.swift in Sources */,
+				A6BB05BD2053995000C36E8B /* StringViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A665DDB72043F97900F522AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A665DDC02043F97900F522AE /* LTExtensionDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A665DDC22043F97900F522AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A665DDCB2043F97900F522AE /* LTExtensionDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A665DDBD2043F97900F522AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A665DDA62043F97900F522AE /* LTExtensionDemo */;
+			targetProxy = A665DDBC2043F97900F522AE /* PBXContainerItemProxy */;
+		};
+		A665DDC82043F97900F522AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A665DDA62043F97900F522AE /* LTExtensionDemo */;
+			targetProxy = A665DDC72043F97900F522AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A665DDB32043F97900F522AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A665DDB42043F97900F522AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A665DDCD2043F97900F522AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A665DDCE2043F97900F522AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A665DDD02043F97900F522AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LTExtensionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTExtensionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A665DDD12043F97900F522AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = LTExtensionDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTExtensionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A665DDD32043F97900F522AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LTExtensionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTExtensionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LTExtensionDemo.app/LTExtensionDemo";
+			};
+			name = Debug;
+		};
+		A665DDD42043F97900F522AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LTExtensionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTExtensionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LTExtensionDemo.app/LTExtensionDemo";
+			};
+			name = Release;
+		};
+		A665DDD62043F97900F522AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LTExtensionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTExtensionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LTExtensionDemo;
+			};
+			name = Debug;
+		};
+		A665DDD72043F97900F522AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LTExtensionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litao.LTExtensionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LTExtensionDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A665DDA22043F97900F522AE /* Build configuration list for PBXProject "LTExtensionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A665DDCD2043F97900F522AE /* Debug */,
+				A665DDCE2043F97900F522AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A665DDCF2043F97900F522AE /* Build configuration list for PBXNativeTarget "LTExtensionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A665DDD02043F97900F522AE /* Debug */,
+				A665DDD12043F97900F522AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A665DDD22043F97900F522AE /* Build configuration list for PBXNativeTarget "LTExtensionDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A665DDD32043F97900F522AE /* Debug */,
+				A665DDD42043F97900F522AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A665DDD52043F97900F522AE /* Build configuration list for PBXNativeTarget "LTExtensionDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A665DDD62043F97900F522AE /* Debug */,
+				A665DDD72043F97900F522AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A665DD9F2043F97900F522AE /* Project object */;
+}
