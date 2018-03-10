@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LTExtension"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Swift Common Extension"
 
   # This description is used to generate tags and improve search results.
