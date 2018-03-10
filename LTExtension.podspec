@@ -79,6 +79,7 @@ Pod::Spec.new do |s|
   #
 
   s.source       = { :git => "https://github.com/TopSkySir/LTExtension.git", :tag => "#{s.version}" }
+  s.swift_version = "4.0"
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
