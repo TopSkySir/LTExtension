@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Array where Element: Equatable {
+public extension Array where Element: Equatable {
 
     /**
      移除第一个相等的元素
@@ -21,7 +21,7 @@ extension Array where Element: Equatable {
 
 }
 
-extension Array {
+public extension Array {
 
 
     // MARK: - 安全
