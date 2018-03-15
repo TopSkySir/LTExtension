@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class NSAttributedContent {
+public class NSAttributedContent: NSObject {
 
     /**
      字号
@@ -129,6 +129,37 @@ public class NSAttributedContent {
      */
     var verticalGlyphForm: Int?
 
+    /**
+     容器属性映射字典 content convert to Dictionary
+     */
+    func toDictionary() -> [NSAttributedStringKey: Any] {
+        var dict = [NSAttributedStringKey: Any]()
+        dict[.font] = font
+        dict[.paragraphStyle] = paragraphStyle
+        dict[.foregroundColor] = foregroundColor
+        dict[.backgroundColor] = backgroundColor
+        dict[.ligature] = ligature
+        dict[.kern] = kern
+        dict[.strikethroughStyle] = strikethroughStyle?.rawValue
+        dict[.strikethroughColor] = strikethroughColor
+        dict[.underlineStyle] = underlineStyle?.rawValue
+        dict[.underlineColor] = underlineColor
+        dict[.strokeColor] = strokeColor
+        dict[.strokeWidth] = strokeWidth
+        dict[.shadow] = shadow
+        dict[.textEffect] = textEffect
+        dict[.attachment] = attachment
+        dict[.link] = link
+        dict[.baselineOffset] = baselineOffset
+        dict[.obliqueness] = obliqueness
+        dict[.expansion] = expansion
+        if let writingDirection = writingDirection {
+            dict[.writingDirection] = [writingDirection]
+        }
+        dict[.verticalGlyphForm] = verticalGlyphForm
+        return dict
+    }
+
 }
 
 public extension NSAttributedString {
@@ -198,30 +229,11 @@ public extension NSAttributedString {
      容器属性映射字典 content convert to Dictionary
      */
     fileprivate func getAttributedDictionay(_ content: NSAttributedContent) -> [NSAttributedStringKey: Any] {
-        var dict = [NSAttributedStringKey: Any]()
-        dict[.font] = content.font
-        dict[.paragraphStyle] = content.paragraphStyle
-        dict[.foregroundColor] = content.foregroundColor
-        dict[.backgroundColor] = content.backgroundColor
-        dict[.ligature] = content.ligature
-        dict[.kern] = content.kern
-        dict[.strikethroughStyle] = content.strikethroughStyle?.rawValue
-        dict[.strikethroughColor] = content.strikethroughColor
-        dict[.underlineStyle] = content.underlineStyle?.rawValue
-        dict[.underlineColor] = content.underlineColor
-        dict[.strokeColor] = content.strokeColor
-        dict[.strokeWidth] = content.strokeWidth
-        dict[.shadow] = content.shadow
-        dict[.textEffect] = content.textEffect
-//        dict[.attachment] = content.attachment
-        dict[.link] = content.link
-        dict[.baselineOffset] = content.baselineOffset
-        dict[.obliqueness] = content.obliqueness
-        dict[.expansion] = content.expansion
-        if let writingDirection = content.writingDirection {
-            dict[.writingDirection] = [writingDirection]
-        }
-        dict[.verticalGlyphForm] = content.verticalGlyphForm
+        var dict = content.toDictionary()
+        /**
+         忽略附件
+         */
+        dict[.attachment] = nil
         return dict
     }
 
@@ -230,10 +242,11 @@ public extension NSAttributedString {
      拼接
      */
     func appendDeleteLine(_ style: NSUnderlineStyle = NSUnderlineStyle.styleSingle, _ color: UIColor? = nil) -> NSAttributedString {
-        return self.append { (content) in
+        let closure: (NSAttributedContent) -> Void = { (content) in
             content.strikethroughStyle = style
             content.strikethroughColor = color
         }
+        return self.append(closure)
     }
 
     

@@ -16,7 +16,7 @@ public extension UIViewController {
     /**
      返回
      */
-    func goBack(_ animated: Bool = true) {
+    @objc func goBack(_ animated: Bool = true) {
         if presentingViewController != nil {
             if let count = navigationController?.viewControllers.count {
                 if count > 1 {
@@ -35,7 +35,7 @@ public extension UIViewController {
     /**
      pop返回
      */
-    func popBack(_ animated: Bool = true){
+    @objc func popBack(_ animated: Bool = true){
         navigationController?.popViewController(animated: true)
     }
 
@@ -43,7 +43,7 @@ public extension UIViewController {
     /**
      dissmiss返回
      */
-    func dismissBack(_ animated: Bool = true) {
+    @objc func dismissBack(_ animated: Bool = true) {
         dismiss(animated: animated, completion: nil)
     }
 
@@ -70,6 +70,7 @@ public extension UIViewController {
         guard let resultVC = viewController  else {
             return
         }
+        resultVC.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(resultVC, animated: animated)
     }
 
