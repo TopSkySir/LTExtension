@@ -9,109 +9,109 @@
 import Foundation
 import UIKit
 
-public class NSAttributedContent: NSObject {
+open class NSAttributedContent: NSObject {
 
     /**
      字号
      */
-    var font: UIFont?
+    open var font: UIFont?
 
     /**
      段落格式
      */
-    var paragraphStyle: NSParagraphStyle?
+    open var paragraphStyle: NSParagraphStyle?
 
     /**
      字体颜色
      */
-    var foregroundColor: UIColor?
+    open var foregroundColor: UIColor?
 
     /**
      背景颜色
      */
-    var backgroundColor: UIColor?
+    open var backgroundColor: UIColor?
 
     /**
      是否 使用 连接字符 默认值： 1
      0: 不使用
      1: 默认连接子符
      */
-    var ligature: Int?
+    open var ligature: Int?
 
     /**
      字间距 浮点 默认值： 0
      0: 不使用字母紧排
      */
-    var kern: CGFloat?
+    open var kern: CGFloat?
 
     /**
      删除线
      */
-    var strikethroughStyle:  NSUnderlineStyle?
+    open var strikethroughStyle:  NSUnderlineStyle?
 
     /**
      删除线颜色
      */
-    var strikethroughColor: UIColor?
+    open var strikethroughColor: UIColor?
 
     /**
      下划线
      */
-    var underlineStyle: NSUnderlineStyle?
+    open var underlineStyle: NSUnderlineStyle?
 
     /**
      下划线颜色
      */
-    var underlineColor: UIColor?
+    open var underlineColor: UIColor?
 
     /**
      填充颜色
      */
-    var strokeColor: UIColor?
+    open var strokeColor: UIColor?
     /** 描边宽度 默认值： 0
      负值填充， 正值中空
      */
-    var strokeWidth: CGFloat?
+    open var strokeWidth: CGFloat?
 
     /**
      阴影
      */
-    var shadow: NSShadow?
+    open var shadow: NSShadow?
 
     /**
      文字特殊效果 目前只有图版印刷效果可用
      */
-    var textEffect: NSAttributedString.TextEffectStyle?
+    open var textEffect: NSAttributedString.TextEffectStyle?
 
     /**
      文本附件
      */
-    var attachment: NSTextAttachment?
+    open var attachment: NSTextAttachment?
 
     /**
      文本链接
      */
-    var link: NSString?
+    open var link: NSString?
 
     /**
      文本基准线 默认值： 0
      正值： 上偏
      负值： 下偏
      */
-    var baselineOffset: CGFloat?
+    open var baselineOffset: CGFloat?
 
     /**
      倾斜度 默认值 0
      正值： 右倾
      负值： 左倾
      */
-    var obliqueness: CGFloat?
-    
+    open var obliqueness: CGFloat?
+
 
     /**
      扁平化
      */
-    var expansion: CGFloat?
+    open var expansion: CGFloat?
 
     /**
      书写方向
@@ -120,19 +120,19 @@ public class NSAttributedContent: NSObject {
      2: LRO
      3: RLO
      */
-    var writingDirection: Int?
+    open var writingDirection: Int?
 
     /**
      排版方向 默认0 Currently on iOS, it's always horizontal.
      0: 水平排版
      1: 垂直排版
      */
-    var verticalGlyphForm: Int?
+    open var verticalGlyphForm: Int?
 
     /**
      容器属性映射字典 content convert to Dictionary
      */
-    func toDictionary() -> [NSAttributedStringKey: Any] {
+    open func toDictionary() -> [NSAttributedStringKey: Any] {
         var dict = [NSAttributedStringKey: Any]()
         dict[.font] = font
         dict[.paragraphStyle] = paragraphStyle
@@ -191,7 +191,7 @@ public extension NSAttributedString {
     /**
      拼接 字符串 和 属性
      string: 拼接内容
-     closure: 描述属性闭包 可增加修改属性
+     closure: 描述属性l闭包 可增加修改属性
      */
     func append(_ string: String, _ closure: (NSAttributedContent) -> Void) -> NSAttributedString {
         let content = NSAttributedContent()
