@@ -11,15 +11,14 @@ import UIKit
 
 public extension UIColor {
 
-
     class func color(_ R: CGFloat, _ G: CGFloat, _ B: CGFloat, _ A: CGFloat = 1) -> UIColor {
         return UIColor(red: R/255.0, green: G/255.0, blue: B/255.0, alpha: A)
     }
 
     class func color(_ H: UInt, _ A: CGFloat = 1) -> UIColor {
-        let R = CGFloat(H & 0xFF0000 >> 16)
-        let G = CGFloat(H & 0xFF00 >> 8)
-        let B = CGFloat(H & 0xFF)
+        let R = CGFloat((H & 0xFF0000) >> 16)
+        let G = CGFloat((H & 0xFF00) >> 8)
+        let B = CGFloat(H & 0x0000FF)
         return color(R, G, B, A)
     }
 
@@ -50,13 +49,13 @@ public extension UIColor {
         let rRange = rf..<rt
         let r = String(h[rRange])
 
-        let gf = h.index(h.startIndex, offsetBy: 4)
-        let gt = h.index(h.startIndex, offsetBy: 6)
+        let gf = h.index(h.startIndex, offsetBy: 2)
+        let gt = h.index(h.startIndex, offsetBy: 4)
         let gRange = gf..<gt
         let g = String(h[gRange])
 
-        let bf = h.index(h.startIndex, offsetBy: 2)
-        let bt = h.index(h.startIndex, offsetBy: 4)
+        let bf = h.index(h.startIndex, offsetBy: 4)
+        let bt = h.index(h.startIndex, offsetBy: 6)
         let bRange = bf..<bt
         let b = String(h[bRange])
 
