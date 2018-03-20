@@ -34,6 +34,8 @@
 		A6BB05C42053995000C36E8B /* OptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B62053995000C36E8B /* OptionalViewController.swift */; };
 		A6BB05C52053995000C36E8B /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B72053995000C36E8B /* TextFieldViewController.swift */; };
 		A6BB05C62053995000C36E8B /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05B82053995000C36E8B /* ColorViewController.swift */; };
+		A6F0EA532060FBA2002DFFD3 /* UITableView+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0EA522060FBA2002DFFD3 /* UITableView+LTExtension.swift */; };
+		A6F0EA552060FBB8002DFFD3 /* UICollectionView+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F0EA542060FBB8002DFFD3 /* UICollectionView+LTExtension.swift */; };
 		A6FF5B2720510FCE00A22FCE /* UITextField+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FF5B2620510FCE00A22FCE /* UITextField+LTExtension.swift */; };
 		A6FF5B2D205113CA00A22FCE /* UIImage+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FF5B2C205113CA00A22FCE /* UIImage+LTExtension.swift */; };
 		A6FF5B2F20511B6200A22FCE /* UIColor+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FF5B2E20511B6200A22FCE /* UIColor+LTExtension.swift */; };
@@ -91,6 +93,8 @@
 		A6BB05B62053995000C36E8B /* OptionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalViewController.swift; sourceTree = "<group>"; };
 		A6BB05B72053995000C36E8B /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		A6BB05B82053995000C36E8B /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		A6F0EA522060FBA2002DFFD3 /* UITableView+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+LTExtension.swift"; sourceTree = "<group>"; };
+		A6F0EA542060FBB8002DFFD3 /* UICollectionView+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+LTExtension.swift"; sourceTree = "<group>"; };
 		A6FF5B2620510FCE00A22FCE /* UITextField+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+LTExtension.swift"; sourceTree = "<group>"; };
 		A6FF5B2C205113CA00A22FCE /* UIImage+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+LTExtension.swift"; sourceTree = "<group>"; };
 		A6FF5B2E20511B6200A22FCE /* UIColor+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+LTExtension.swift"; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 				A6FF5B3820513E0700A22FCE /* UIViewController+LTExtension.swift */,
 				A6458A7D20526B5200132B39 /* UIApplication+LTExtension.swift */,
 				A6458A81205286A200132B39 /* UIDevice+LTExtension.swift */,
+				A6F0EA522060FBA2002DFFD3 /* UITableView+LTExtension.swift */,
+				A6F0EA542060FBB8002DFFD3 /* UICollectionView+LTExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -369,6 +375,7 @@
 				A665DDAD2043F97900F522AE /* ViewController.swift in Sources */,
 				A6458A7E20526B5200132B39 /* UIApplication+LTExtension.swift in Sources */,
 				A6BB05C32053995000C36E8B /* DictionaryViewController.swift in Sources */,
+				A6F0EA552060FBB8002DFFD3 /* UICollectionView+LTExtension.swift in Sources */,
 				A6BB05C62053995000C36E8B /* ColorViewController.swift in Sources */,
 				A6BB05C22053995000C36E8B /* ImageViewController.swift in Sources */,
 				A62D270B20491594009BAEAE /* Array+LTExtension.swift in Sources */,
@@ -379,6 +386,7 @@
 				A62D270A20491594009BAEAE /* Optional+LTExtension.swift in Sources */,
 				A6BB05BC2053995000C36E8B /* UIApplicationViewController.swift in Sources */,
 				A6BB05BF2053995000C36E8B /* DeviceViewController.swift in Sources */,
+				A6F0EA532060FBA2002DFFD3 /* UITableView+LTExtension.swift in Sources */,
 				A6BB05C52053995000C36E8B /* TextFieldViewController.swift in Sources */,
 				A6BB05C42053995000C36E8B /* OptionalViewController.swift in Sources */,
 				A6FF5B3920513E0700A22FCE /* UIViewController+LTExtension.swift in Sources */,
@@ -547,7 +555,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = HLBKRB67RG;
 				INFOPLIST_FILE = LTExtensionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -563,7 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = HLBKRB67RG;
 				INFOPLIST_FILE = LTExtensionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -27,7 +27,8 @@ class DeviceViewController: BaseTableViewController {
         addAction(title: "device") {
             print(UIDevice.SystemVersion)
             print(UIDevice.SystemName)
-            print(UIDevice.uuid)
+            print(UIDevice.uuid.safeValue)
+            print(UIDevice.platform)
 
         }
     }
