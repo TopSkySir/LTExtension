@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
 
     /**
      注册Cell

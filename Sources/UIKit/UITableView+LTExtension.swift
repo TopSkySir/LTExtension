@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UITableView {
+public extension UITableView {
 
     /**
      注册Cell
