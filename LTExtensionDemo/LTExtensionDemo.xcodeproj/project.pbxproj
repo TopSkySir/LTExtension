@@ -12,6 +12,8 @@
 		A62D270920491594009BAEAE /* NSAttributedString+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D270420491594009BAEAE /* NSAttributedString+LTExtension.swift */; };
 		A62D270A20491594009BAEAE /* Optional+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D270520491594009BAEAE /* Optional+LTExtension.swift */; };
 		A62D270B20491594009BAEAE /* Array+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62D270620491594009BAEAE /* Array+LTExtension.swift */; };
+		A643C5F1206A2C8800F3FD22 /* UIAlertController+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A643C5F0206A2C8800F3FD22 /* UIAlertController+LTExtension.swift */; };
+		A643C5F3206A325900F3FD22 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A643C5F2206A325900F3FD22 /* AlertViewController.swift */; };
 		A6458A7E20526B5200132B39 /* UIApplication+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6458A7D20526B5200132B39 /* UIApplication+LTExtension.swift */; };
 		A6458A82205286A200132B39 /* UIDevice+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6458A81205286A200132B39 /* UIDevice+LTExtension.swift */; };
 		A665DDAB2043F97900F522AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A665DDAA2043F97900F522AE /* AppDelegate.swift */; };
@@ -65,6 +67,8 @@
 		A62D270420491594009BAEAE /* NSAttributedString+LTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+LTExtension.swift"; sourceTree = "<group>"; };
 		A62D270520491594009BAEAE /* Optional+LTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+LTExtension.swift"; sourceTree = "<group>"; };
 		A62D270620491594009BAEAE /* Array+LTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+LTExtension.swift"; sourceTree = "<group>"; };
+		A643C5F0206A2C8800F3FD22 /* UIAlertController+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+LTExtension.swift"; sourceTree = "<group>"; };
+		A643C5F2206A325900F3FD22 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 		A6458A7D20526B5200132B39 /* UIApplication+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+LTExtension.swift"; sourceTree = "<group>"; };
 		A6458A81205286A200132B39 /* UIDevice+LTExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+LTExtension.swift"; sourceTree = "<group>"; };
 		A665DDA72043F97900F522AE /* LTExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +220,7 @@
 				A6BB05B62053995000C36E8B /* OptionalViewController.swift */,
 				A6BB05B72053995000C36E8B /* TextFieldViewController.swift */,
 				A6BB05B82053995000C36E8B /* ColorViewController.swift */,
+				A643C5F2206A325900F3FD22 /* AlertViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				A6458A81205286A200132B39 /* UIDevice+LTExtension.swift */,
 				A6F0EA522060FBA2002DFFD3 /* UITableView+LTExtension.swift */,
 				A6F0EA542060FBB8002DFFD3 /* UICollectionView+LTExtension.swift */,
+				A643C5F0206A2C8800F3FD22 /* UIAlertController+LTExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 				A6BB05C52053995000C36E8B /* TextFieldViewController.swift in Sources */,
 				A6BB05C42053995000C36E8B /* OptionalViewController.swift in Sources */,
 				A6FF5B3920513E0700A22FCE /* UIViewController+LTExtension.swift in Sources */,
+				A643C5F1206A2C8800F3FD22 /* UIAlertController+LTExtension.swift in Sources */,
 				A665DDAB2043F97900F522AE /* AppDelegate.swift in Sources */,
 				A6FF5B2D205113CA00A22FCE /* UIImage+LTExtension.swift in Sources */,
 				A6BB05BA2053995000C36E8B /* BaseContentViewController.swift in Sources */,
@@ -397,6 +404,7 @@
 				A6BB05BB2053995000C36E8B /* NSAttributedStringVC.swift in Sources */,
 				A6BB05B92053995000C36E8B /* VCViewController.swift in Sources */,
 				A6BB05BD2053995000C36E8B /* StringViewController.swift in Sources */,
+				A643C5F3206A325900F3FD22 /* AlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

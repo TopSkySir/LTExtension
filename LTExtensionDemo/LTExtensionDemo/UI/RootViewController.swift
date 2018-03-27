@@ -29,7 +29,7 @@ class RootViewController: BaseTableViewController {
     }
 
     override func add() {
-        
+        addPushViewcontroller(vcType: AlertViewController.self, title: "UIAlertController")
         addPushViewcontroller(vcType: DeviceViewController.self, title: "UIDevice")
         addPushViewcontroller(vcType: UIApplicationViewController.self, title: "UIApplication")
         addPushViewcontroller(vcType: VCViewController.self, title: "UIViewController")

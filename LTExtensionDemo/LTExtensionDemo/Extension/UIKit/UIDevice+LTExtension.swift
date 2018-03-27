@@ -31,7 +31,7 @@ public extension UIDevice {
 
 public extension UIDevice {
 
-    static var platform: String {
+    static var machineName: String {
         var systemInfo = utsname()
         uname(&systemInfo)
         let machineMirror = Mirror(reflecting: systemInfo.machine)
@@ -41,9 +41,11 @@ public extension UIDevice {
             }
             return identifier + String(UnicodeScalar(UInt8(value)))
         }
+        return identifier
+    }
 
-
-        switch identifier {
+    static var platform: String {
+        switch machineName {
         case "iPod5,1":                                 return "iPod Touch 5"
         case "iPod7,1":                                 return "iPod Touch 6"
         case "iPhone3,1", "iPhone3,2", "iPhone3,3":     return "iPhone 4"
@@ -78,7 +80,7 @@ public extension UIDevice {
         case "iPad6,7", "iPad6,8":                      return "iPad Pro"
         case "AppleTV5,3":                              return "Apple TV"
         case "i386", "x86_64":                          return "Simulator"
-        default:                                        return identifier
+        default:                                        return machineName
         }
     }
 

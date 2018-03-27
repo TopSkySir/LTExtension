@@ -25,7 +25,7 @@ public extension Optional where Wrapped: Collection{
      w: Wrapped
      nil： count = 0
      */
-    var wrappedCount: Int {
+    var safeCount: Int {
         guard !isNil else {
             return 0
         }

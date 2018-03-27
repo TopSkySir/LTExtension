@@ -54,20 +54,20 @@ class OptionalViewController: BaseTableViewController {
         addAction(title: "wrappedCount") {
             let a: String? = ""
             var b: String? = nil
-            print(a.wrappedCount)
-            print(b.wrappedCount)
+            print(a.safeCount)
+            print(b.safeCount)
             b = "a"
-            print(b.wrappedCount)
+            print(b.safeCount)
 
             var c: [String]? = [String]()
-            print(c.wrappedCount)
+            print(c.safeCount)
             c?.append("name")
-            print(c.wrappedCount)
+            print(c.safeCount)
 
             var d: [String: Any]? = [String: Any]()
-            print(d.wrappedCount)
+            print(d.safeCount)
             d?["anme"] = 1
-            print(d.wrappedCount)
+            print(d.safeCount)
         }
 
         addAction(title: "safe") {
