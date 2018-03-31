@@ -9,6 +9,29 @@
 import Foundation
 import UIKit
 
+
+// MARK: - 属性
+public extension UIAlertController {
+
+    /**
+     设置标题富文本
+     */
+    func setTitleAttribute(_ title: NSAttributedString) {
+        setValue(title, forKey: "attributedTitle")
+    }
+
+    /**
+     设置信息富文本
+     */
+    func setMessageAttribute(_ message: NSAttributedString) {
+        setValue(message, forKey: "attributedMessage")
+    }
+
+}
+
+
+// MARK: - 方法
+
 public extension UIAlertController {
 
     /**
@@ -72,7 +95,7 @@ public extension UIAlertController {
         /**
          设置标题和文案
          */
-        let alertVC = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let alertVC = self.init(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         alertVC.addAction(title: sureTitle, style: .default, closure: sureClosure)
         alertVC.addAction(title: cancelTitle, style: .cancel, closure: cancelClosure)
 
