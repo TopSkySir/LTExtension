@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 public extension String {
 
@@ -105,6 +106,31 @@ public extension String {
 }
 
 
+// MARK: - 获取字符串宽高
+public extension String {
+
+    /**
+     获取字符串Size
+     */
+    func size(_ font: UIFont, contentSize: CGSize = CGSize.zero) -> CGSize {
+        let rect = self.boundingRect(with: contentSize, options: [.usesLineFragmentOrigin, .usesFontLeading], attributes: [NSAttributedStringKey.font: font], context: nil);
+        return rect.size
+    }
+
+    /**
+     获取字符串宽度
+     */
+    func width(_ font: UIFont, height: CGFloat = 0) -> CGFloat {
+        return size(font, contentSize: CGSize(width: CGFloat(MAXFLOAT), height: height)).width
+    }
+
+    /**
+     获取字符串高度
+     */
+    func height(_ font: UIFont, width: CGFloat = 0) -> CGFloat {
+        return size(font, contentSize: CGSize(width: width, height: CGFloat(MAXFLOAT))).height
+    }
+}
 
 
 

@@ -22,6 +22,21 @@ class StringViewController: BaseTableViewController {
     }
 
     override func add() {
+
+        addAction(title: "宽高") {
+            let str = "ABCDEFG"
+            let font = UIFont.systemFont(ofSize: 16)
+            print(str.width(UIFont.systemFont(ofSize: 16)))
+            print(str.size(UIFont.systemFont(ofSize: 16)))
+            print(str.height(UIFont.systemFont(ofSize: 16)))
+
+            print(str.width(font, height: 50))
+            print(str.height(font, width: 30))
+            print(str.size(font, contentSize: CGSize(width: 30, height: Double(MAXFLOAT))))
+            print(str.size(font, contentSize: CGSize(width: 50, height: 50)))
+
+        }
+
         addAction(title: "trim") {
             let a = "   abc   "
             print(":\(a.trim()):")
