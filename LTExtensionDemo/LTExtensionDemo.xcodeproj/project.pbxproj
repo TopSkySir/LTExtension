@@ -25,6 +25,8 @@
 		A665DDB52043F97900F522AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A665DDB32043F97900F522AE /* LaunchScreen.storyboard */; };
 		A665DDC02043F97900F522AE /* LTExtensionDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A665DDBF2043F97900F522AE /* LTExtensionDemoTests.swift */; };
 		A665DDCB2043F97900F522AE /* LTExtensionDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A665DDCA2043F97900F522AE /* LTExtensionDemoUITests.swift */; };
+		A678CF0F209AF40900F4BC34 /* UIResponderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A678CF0E209AF40900F4BC34 /* UIResponderController.swift */; };
+		A678CF11209AF44900F4BC34 /* UIResponder+LTExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A678CF10209AF44900F4BC34 /* UIResponder+LTExtension.swift */; };
 		A6BB05B92053995000C36E8B /* VCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05AB2053995000C36E8B /* VCViewController.swift */; };
 		A6BB05BA2053995000C36E8B /* BaseContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05AC2053995000C36E8B /* BaseContentViewController.swift */; };
 		A6BB05BB2053995000C36E8B /* NSAttributedStringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BB05AD2053995000C36E8B /* NSAttributedStringVC.swift */; };
@@ -89,6 +91,8 @@
 		A665DDC62043F97900F522AE /* LTExtensionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTExtensionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A665DDCA2043F97900F522AE /* LTExtensionDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTExtensionDemoUITests.swift; sourceTree = "<group>"; };
 		A665DDCC2043F97900F522AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A678CF0E209AF40900F4BC34 /* UIResponderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIResponderController.swift; sourceTree = "<group>"; };
+		A678CF10209AF44900F4BC34 /* UIResponder+LTExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+LTExtension.swift"; sourceTree = "<group>"; };
 		A6BB05AB2053995000C36E8B /* VCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCViewController.swift; sourceTree = "<group>"; };
 		A6BB05AC2053995000C36E8B /* BaseContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseContentViewController.swift; sourceTree = "<group>"; };
 		A6BB05AD2053995000C36E8B /* NSAttributedStringVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringVC.swift; sourceTree = "<group>"; };
@@ -229,6 +233,7 @@
 				A6BB05B82053995000C36E8B /* ColorViewController.swift */,
 				A643C5F2206A325900F3FD22 /* AlertViewController.swift */,
 				A604D7DA206F95D3008DE2FB /* DateViewController.swift */,
+				A678CF0E209AF40900F4BC34 /* UIResponderController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -237,15 +242,16 @@
 			isa = PBXGroup;
 			children = (
 				A604D7D8206F9573008DE2FB /* UIAlertAction+LTExtension.swift */,
-				A6FF5B2620510FCE00A22FCE /* UITextField+LTExtension.swift */,
-				A6FF5B2C205113CA00A22FCE /* UIImage+LTExtension.swift */,
-				A6FF5B2E20511B6200A22FCE /* UIColor+LTExtension.swift */,
-				A6FF5B3820513E0700A22FCE /* UIViewController+LTExtension.swift */,
-				A6458A7D20526B5200132B39 /* UIApplication+LTExtension.swift */,
-				A6458A81205286A200132B39 /* UIDevice+LTExtension.swift */,
-				A6F0EA522060FBA2002DFFD3 /* UITableView+LTExtension.swift */,
-				A6F0EA542060FBB8002DFFD3 /* UICollectionView+LTExtension.swift */,
 				A643C5F0206A2C8800F3FD22 /* UIAlertController+LTExtension.swift */,
+				A6458A7D20526B5200132B39 /* UIApplication+LTExtension.swift */,
+				A6F0EA542060FBB8002DFFD3 /* UICollectionView+LTExtension.swift */,
+				A6FF5B2E20511B6200A22FCE /* UIColor+LTExtension.swift */,
+				A6458A81205286A200132B39 /* UIDevice+LTExtension.swift */,
+				A6FF5B2C205113CA00A22FCE /* UIImage+LTExtension.swift */,
+				A678CF10209AF44900F4BC34 /* UIResponder+LTExtension.swift */,
+				A6F0EA522060FBA2002DFFD3 /* UITableView+LTExtension.swift */,
+				A6FF5B2620510FCE00A22FCE /* UITextField+LTExtension.swift */,
+				A6FF5B3820513E0700A22FCE /* UIViewController+LTExtension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -391,6 +397,7 @@
 				A6458A7E20526B5200132B39 /* UIApplication+LTExtension.swift in Sources */,
 				A6BB05C32053995000C36E8B /* DictionaryViewController.swift in Sources */,
 				A6F0EA552060FBB8002DFFD3 /* UICollectionView+LTExtension.swift in Sources */,
+				A678CF11209AF44900F4BC34 /* UIResponder+LTExtension.swift in Sources */,
 				A6BB05C62053995000C36E8B /* ColorViewController.swift in Sources */,
 				A604D7DD206F9633008DE2FB /* Date+LTExtension.swift in Sources */,
 				A6BB05C22053995000C36E8B /* ImageViewController.swift in Sources */,
@@ -415,6 +422,7 @@
 				A6BB05C02053995000C36E8B /* RootViewController.swift in Sources */,
 				A6BB05BB2053995000C36E8B /* NSAttributedStringVC.swift in Sources */,
 				A6BB05B92053995000C36E8B /* VCViewController.swift in Sources */,
+				A678CF0F209AF40900F4BC34 /* UIResponderController.swift in Sources */,
 				A6BB05BD2053995000C36E8B /* StringViewController.swift in Sources */,
 				A643C5F3206A325900F3FD22 /* AlertViewController.swift in Sources */,
 			);
