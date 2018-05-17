@@ -71,7 +71,7 @@ public extension String {
      默认0
      */
     func getIntValue(_ defaultValue: Int = 0) -> Int {
-        return intValue ?? defaultValue
+        return intValue.safe(defaultValue)
     }
 
     /**
@@ -86,7 +86,7 @@ public extension String {
      默认0
      */
     func getFloatValue(_ defaultValue: Float = 0) -> Float {
-        return floatValue ?? defaultValue
+        return floatValue.safe(defaultValue)
     }
 
     /**
@@ -101,7 +101,7 @@ public extension String {
      默认0
      */
     func getDoubleValue(_ defaultValue: Double = 0) -> Double {
-        return doubleValue ?? defaultValue
+        return doubleValue.safe(defaultValue)
     }
 }
 

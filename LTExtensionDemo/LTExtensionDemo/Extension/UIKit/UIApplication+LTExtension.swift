@@ -102,7 +102,7 @@ public extension UIApplication {
             return nil
         }
 
-        guard arr.count > index  else {
+        guard arr.isSafe(index) else {
             return nil
         }
 
@@ -121,7 +121,7 @@ public extension UIApplication {
             return
         }
 
-        guard arr.count > index  else {
+        guard arr.isSafe(index) else {
             return
         }
 

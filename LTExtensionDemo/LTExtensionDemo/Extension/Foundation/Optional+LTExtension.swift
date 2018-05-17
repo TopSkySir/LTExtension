@@ -51,7 +51,7 @@ public extension Optional where Wrapped == Bool {
      Bool拆包 安全值
      */
     var safeValue: Bool {
-        return self ?? false
+        return safe(false)
     }
 }
 
@@ -61,7 +61,7 @@ public extension Optional where Wrapped == String {
      字符串拆包 安全值 
      */
     var safeValue: String {
-        return self ?? ""
+        return safe("")
     }
 }
 
@@ -71,7 +71,20 @@ public extension Optional where Wrapped: Numeric {
      数值类拆包 安全值
      */
     var safeValue: Wrapped {
-        return self ?? 0
+        return safe(0)
+    }
+}
+
+public extension Optional {
+
+    /**
+     Optional 安全拆包方法
+     */
+    func safe(_ value: Wrapped) -> Wrapped {
+        guard self == nil else {
+            return unsafelyUnwrapped
+        }
+        return value
     }
 }
 

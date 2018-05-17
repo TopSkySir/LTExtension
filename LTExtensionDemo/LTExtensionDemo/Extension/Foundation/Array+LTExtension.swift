@@ -30,7 +30,8 @@ public extension Array {
      下标是否安全,数组是否越界
      */
     func isSafe(_ index: Int) -> Bool {
-        return (0..<self.count).contains(index)
+        let range = 0..<self.count
+        return range.contains(index)
     }
 
 
@@ -38,14 +39,17 @@ public extension Array {
      取值的安全扩展
      */
     func safe(index: Int) -> Element? {
-        return isSafe(index) ? self[index] : nil
+        guard isSafe(index) else {
+            return nil
+        }
+        return self[index]
     }
 
     /**
      下标取值的安全扩展
      */
     subscript (safe index: Int) -> Element? {
-        return isSafe(index) ? self[index] : nil
+        return safe(index: index)
     }
 
 

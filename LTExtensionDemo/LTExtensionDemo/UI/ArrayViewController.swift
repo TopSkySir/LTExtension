@@ -34,7 +34,7 @@ class ArrayViewController: BaseTableViewController {
             var a = [1,2,3,4,6,7,9]
             print(a[safe: 3])
             print(a[safe: 10])
-            let b = a.safe(index: 3)
+            let b = a.safe(index: 3).safeValue
             print(b)
         }
 
