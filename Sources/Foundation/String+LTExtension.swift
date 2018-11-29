@@ -53,6 +53,84 @@ public extension String {
         return String(self[range])
     }
 
+
+    /**
+     截取字符串
+     */
+    func substring(_ range: NSRange) -> String {
+        return NSString(string: self).substring(with: range)
+    }
+
+    /**
+     获取文件后缀名 （不带.）
+     */
+    func pathExtension() -> String {
+        return NSString(string: self).pathExtension
+    }
+
+    /**
+     从路径中获得完整的文件名（带后缀）
+     */
+    func lastPathComponent() ->String {
+        return NSString(string: self).lastPathComponent
+    }
+
+    /**
+     获得文件名（不带后缀）
+     */
+    func deletingPathExtension() ->String {
+        return NSString(string: self).deletingPathExtension
+    }
+}
+
+
+// MARK: - 正则
+
+public extension String {
+
+    /**
+     正则替换字符
+     */
+    func replace(pattern:String, template:String) -> String {
+
+        guard !isEmpty else {
+            return self
+        }
+
+        do {
+            let regularExpression = try NSRegularExpression(pattern: pattern, options: NSRegularExpression.Options.caseInsensitive)
+
+            return regularExpression.stringByReplacingMatches(in: self, options: NSRegularExpression.MatchingOptions.reportProgress, range: NSMakeRange(0, count), withTemplate: template)
+        } catch {
+            return self
+        }
+    }
+
+    /**
+     正则搜索相关字符位置
+     */
+    func matches(pattern:String) -> [NSTextCheckingResult] {
+        guard !isEmpty else {
+            return []
+        }
+        do {
+            let regularExpression = try NSRegularExpression(pattern: pattern, options: NSRegularExpression.Options.caseInsensitive)
+
+            return regularExpression.matches(in: self, options: NSRegularExpression.MatchingOptions.reportProgress, range: NSMakeRange(0, count))
+
+        } catch {
+            return []
+        }
+    }
+
+    /**
+     是否存在正则匹配到的内容
+     */
+    func isMatch(pattern:String) ->Bool {
+        let result:[NSTextCheckingResult] = matches(pattern: pattern)
+        return !result.isEmpty
+    }
+
 }
 
 

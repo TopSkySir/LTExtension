@@ -83,6 +83,29 @@ class StringViewController: BaseTableViewController {
             print(a[-1,-1])
         }
 
+        addAction(title: "substring2") {
+            let a = "123123412434"
+            print(a.substring(NSMakeRange(3, 2)))
+        }
+
+        addAction(title: "replace") {
+            let a = "AF123123412312AA"
+//            let b = a.replacing(pattern:"\D",template: "10")
+            let b = a.replace(pattern: "\\D", template: "")
+            print(b)
+        }
+
+        addAction(title: "matches") {
+            let a = "AF12312AF3412312AA"
+            let b = a.matches(pattern: "AF")
+            print(b)
+        }
+
+        addAction(title: "isMatch") {
+            let a = "AF12312AF3412312AA"
+            let b = a.isMatch(pattern: "AF")
+            print(b)
+        }
     }
     
 
